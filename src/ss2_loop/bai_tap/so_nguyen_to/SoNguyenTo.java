@@ -12,7 +12,7 @@ public class SoNguyenTo {
          Number = input.nextInt();
          while (count<Number){
              int count1 = 0;
-             for (int i = 2; i<N; i++){
+             for (int i = 2; i < N; i++){
                  if (N%i ==0){
                      count1++;
                  }
