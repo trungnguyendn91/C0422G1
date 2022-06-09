@@ -1,4 +1,4 @@
-package ss3_mang_va_phuong_thuc.gop_mang;
+package ss3_mang_va_phuong_thuc.bai_tap.gop_mang;
 
 import java.util.Scanner;
 
@@ -35,15 +35,16 @@ public class GopMang {
         for (int j2=0 ; j2< array2.length; j2++){
             System.out.print( array2[j2]+ "\t");
         }
-        int[] array3 = new int[size1+size2];
+        System.out.print("\narray 3: ");
+        int[] array3 = new int[array1.length+array2.length];
         for (int i= 0 ; i < array1.length; i++){
-            array3[i] = array1 [i1];
+            array3[i] = array1 [i];
         }
         for (int i = 0; i < array2.length; i++){
-            array3[size1+ i] = array2[i2];
+            array3[size1+ i] = array2[i];
         }
         for (int i =0; i < array3.length; i++){
-            System.out.print(array3[i]+"\t");
+            System.out.print( array3[i]+"\t");
         }
     }
 }
