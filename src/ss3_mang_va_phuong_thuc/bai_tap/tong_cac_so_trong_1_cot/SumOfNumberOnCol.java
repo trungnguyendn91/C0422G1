@@ -2,7 +2,7 @@ package ss3_mang_va_phuong_thuc.bai_tap.tong_cac_so_trong_1_cot;
 
 import java.util.Scanner;
 
-public class TongCacSoTrong1Cot {
+public class SumOfNumberOnCol {
     public static void show(int[][] arr) {
         for (int[] ints : arr) {
             for (int anInt : ints) {

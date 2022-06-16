@@ -2,7 +2,7 @@ package ss3_mang_va_phuong_thuc.bai_tap.tim_phan_tu_lon_nhat_trong_mang_2_chieu;
 
 import java.util.Scanner;
 
-public class TìmPhanTuLonNhatTrongMang2Chieu {
+public class FindTheLargestElementInA2DimensionalArray {
     public static void show(int[][] arr) {
         for (int i = 0; i < arr.length; i++) {
             for (int j = 0; j < arr[i].length; j++) {

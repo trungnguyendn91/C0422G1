@@ -1,4 +1,4 @@
-package ss5_accesmodifier_staticmethod_staticproperty.bai_tap.access_modifier;
+package ss5_accesmodifier_staticmethod_staticproperty.bai_tap.accessmodifier_circle;
 
 public class TestCircle {
     public static void main(String[] args) {

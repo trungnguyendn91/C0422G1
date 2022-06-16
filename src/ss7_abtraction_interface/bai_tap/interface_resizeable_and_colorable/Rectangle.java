@@ -1,4 +1,4 @@
-package ss7_abtraction_interface.bai_tap.interface_resizeable;
+package ss7_abtraction_interface.bai_tap.interface_resizeable_and_colorable;
 public class Rectangle extends Shape implements Resizeable {
         private double width = 1.0;
         private double length = 1.0;
@@ -54,5 +54,6 @@ public class Rectangle extends Shape implements Resizeable {
     @Override
     public void resize(double percent) {
            setLength(getLength()+(getLength()*percent/100));
+           setWidth((getWidth()+getWidth()*percent/100));
     }
 }

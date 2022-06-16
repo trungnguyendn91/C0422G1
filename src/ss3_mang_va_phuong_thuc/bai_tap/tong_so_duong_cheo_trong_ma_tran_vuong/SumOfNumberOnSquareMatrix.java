@@ -2,7 +2,7 @@ package ss3_mang_va_phuong_thuc.bai_tap.tong_so_duong_cheo_trong_ma_tran_vuong;
 
 import java.util.Scanner;
 
-public class TongSoDuongCheoTrongMaTranVuong {
+public class SumOfNumberOnSquareMatrix {
     public static void show(int[][] arr) {
         for (int[] ints : arr) {
             for (int anInt : ints) {

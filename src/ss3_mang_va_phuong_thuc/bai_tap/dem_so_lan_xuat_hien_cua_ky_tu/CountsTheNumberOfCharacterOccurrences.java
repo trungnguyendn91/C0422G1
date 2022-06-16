@@ -2,7 +2,7 @@ package ss3_mang_va_phuong_thuc.bai_tap.dem_so_lan_xuat_hien_cua_ky_tu;
 
 import java.util.Scanner;
 
-public class DemSoLanXuatHienCuaKyTu {
+public class CountsTheNumberOfCharacterOccurrences {
     public static void main(String[] args) {
         String str ;
         Scanner scanner = new Scanner(System.in);

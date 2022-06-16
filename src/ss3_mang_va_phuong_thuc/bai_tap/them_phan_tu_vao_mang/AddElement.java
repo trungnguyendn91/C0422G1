@@ -2,7 +2,7 @@ package ss3_mang_va_phuong_thuc.bai_tap.them_phan_tu_vao_mang;
 
 import java.util.Scanner;
 
-public class ThemPhanTuVaoMang {
+public class AddElement {
     public static void main(String[] args) {
         int size;
         int[] array;

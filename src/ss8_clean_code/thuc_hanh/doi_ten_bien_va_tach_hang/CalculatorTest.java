@@ -1,4 +1,4 @@
-package ss8_clean_code.thuc_hanh.calculator;
+package ss8_clean_code.thuc_hanh.doi_ten_bien_va_tach_hang;
 
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;

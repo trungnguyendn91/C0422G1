@@ -1,4 +1,4 @@
-package ss7_abtraction_interface.bai_tap.interface_resizeable;
+package ss7_abtraction_interface.bai_tap.interface_resizeable_and_colorable;
 
 public class Circle extends Shape implements Resizeable {
     private double radius = 1.0;

@@ -1,19 +1,19 @@
-package ss7_abtraction_interface.bai_tap.interface_resizeable;
+package ss7_abtraction_interface.bai_tap.interface_resizeable_and_colorable;
 
-public class TestResizeable {
+public class TestResizeableAndColorable {
     public static void main(String[] args) {
         Shape[] shapes = new Shape[3];
-        shapes[0] = new Circle();
-        shapes[1] =  new Rectangle();
-        shapes[2] =  new Square();
+        shapes[0] = new Circle(3.5,"Red", true);
+        shapes[1] =  new Rectangle(3.4,5.2,"Red", true);
+        shapes[2] =  new Square("Red",false, 2.5);
 
-        System.out.println("Before resize: ");
-        System.out.println(new Circle(3.5,"Red", true));
-        System.out.println(new Rectangle(3.4,5.2,"Red", true));
-        System.out.println(new Square("Red",true, 2.5));
+        System.out.println("--------------Before resize: -----------");
+        System.out.println(shapes[0]);
+        System.out.println(shapes[1]);
+        System.out.println(shapes[2]);
 
 
-        System.out.println("After resize: ");
+        System.out.println("----------------After resize: ----------------");
         for (Shape shape : shapes){
             if (shape instanceof Circle){
                 ((Circle) shape).resize(Math.random()*100);

@@ -2,7 +2,7 @@ package ss3_mang_va_phuong_thuc.bai_tap.xoa_phan_tu_khoi_mang;
 
 import java.util.Scanner;
 
-public class XoaPhanTuKhoiMang {
+public class RemoveElementOutArray {
     public static void main(String[] args) {
         int arr [] = {2, 4, 1, 6, 5, 9, 10};
         Scanner scanner = new Scanner(System.in);

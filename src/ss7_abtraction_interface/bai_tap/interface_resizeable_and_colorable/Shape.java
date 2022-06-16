@@ -1,4 +1,4 @@
-package ss7_abtraction_interface.bai_tap.interface_resizeable;
+package ss7_abtraction_interface.bai_tap.interface_resizeable_and_colorable;
 
 public class Shape {
         private String color = "green";

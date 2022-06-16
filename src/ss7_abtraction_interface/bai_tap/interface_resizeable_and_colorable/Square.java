@@ -1,4 +1,4 @@
-package ss7_abtraction_interface.bai_tap.interface_resizeable;
+package ss7_abtraction_interface.bai_tap.interface_resizeable_and_colorable;
 
 public class Square extends Shape implements Resizeable, Colorable {
     private double side = 1.0;
@@ -31,21 +31,21 @@ public class Square extends Shape implements Resizeable, Colorable {
 
     @Override
     public String toString() {
-        return "- A Square with" /*side: " + getSide()+"\n"*/
+        return "- A Square with side: " + getSide()+"\n"
                 +"Area: " + getArea() +"\n"
                 +" Perimeter: "+ getPerimeter()+"\n"
-                /*+ "which is a subclass of "
+               /* + "which is a subclass of "
                 + super.toString()*/ ;
 
     }
 
     @Override
     public void resize(double percent) {
-        setSide(getSide()+(getSide()*percent/100));
+        setSide(getSide()+getSide()*(percent/100));
     }
 
     @Override
     public void howToColor() {
-        System.out.println("Color all four sides.");
+        System.out.println("4 side full color.");
     }
 }

@@ -2,7 +2,7 @@ package ss3_mang_va_phuong_thuc.bai_tap.gop_mang;
 
 import java.util.Scanner;
 
-public class GopMang {
+public class CombineArray {
     public static void main(String[] args) {
         int size1;
         int[] array1;
