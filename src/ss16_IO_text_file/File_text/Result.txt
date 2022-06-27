@@ -1,0 +1,3 @@
+src/ss16_IO_text_file/thuc_hanh/File_text/Result.txt
+ Giá trị lớn nhất là 8
+ Giá trị lớn nhất là 20
