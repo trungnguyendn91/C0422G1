@@ -1,6 +1,6 @@
-package Case_study.framework.service;
+package Case_study.bai_tap_them.service;
 
-public interface IServiceCar {
+public interface IServiceTruck {
     void display();
     void add();
     void edit();

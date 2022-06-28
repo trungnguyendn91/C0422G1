@@ -1,12 +1,13 @@
-package Case_study.framework.service.impl;
+package Case_study.bai_tap_them.service.impl;
 
-import Case_study.framework.Model.Motor;
-import Case_study.framework.service.IServiceMoto;
+import Case_study.bai_tap_them.Model.Motor;
+import Case_study.bai_tap_them.control.Main;
+import Case_study.bai_tap_them.service.IServiceMoto;
 
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class MotoService implements IServiceMoto {
+public class MotoService<index> implements IServiceMoto {
 Scanner scanner = new Scanner(System.in);
 private static final ArrayList<Motor> motorBikeList = new ArrayList<Motor>();
 static {
@@ -58,7 +59,6 @@ public void edit() {
     String findPlate = scanner.nextLine();
     for (int i = 0; i< motorBikeList.size(); i++){
         if (findPlate.equals(motorBikeList.get(i).getLicensePlate())){
-            Boolean check = true;
             while (true){
                 try {
                     motorBikeList.get(i).setLicensePlate(findPlate);
@@ -70,25 +70,56 @@ public void edit() {
                     motorBikeList.get(i).setBrand(scanner.nextLine());
                     System.out.println("Nhập dung tích của xe: ");
                     motorBikeList.get(i).setCapacity(Integer.parseInt(scanner.nextLine()));
-                    check = false;
                     break;
                 } catch (Exception e) {
                     System.out.println("Nhập sai định dạng. Vui lòng nhập lại");
-                    check = true;
                 }
             }
             index = 1;
         }
     }if (index == -1){
-        System.out.println("Không tìm thấy");}
-
-
+        System.out.println("Không tìm thấy");
+        }
 }
 
 @Override
 public void delete() {
+    Boolean flag = false;
+    System.out.println("Nhập biển số muốn xóa: ");
+    String findPlate = scanner.nextLine();
 
+    for (int i = 0; i < motorBikeList.size(); i++) {
+        if (findPlate.equals(motorBikeList.get(i).getLicensePlate())) {
+            /* motorBikeList.remove(i);*/
+            System.out.println("Bạn muốn xóa hay không:" + "\n" +
+                    "1. xóa" + "\n"
+                    + "2. không xóa");
+            int choose = Integer.parseInt(scanner.nextLine());
+            if (choose == 1) {
+                flag = true;
+                motorBikeList.remove(i);
+                System.out.println("Đã xóa");
+                break;
+            } else if (choose == 2) {
+                System.out.println(" không xóa");
+                display();
+                break;
+            } else {
+                try {
+                    throw new NumberFormatException("Không đúng định dạng");
+                } catch (NumberFormatException e) {
+                    System.out.println("Chỉ chọn 1 hoạc 2");
+                }
+                break;
+            }
+        }
+
+    }
+    if (flag = false) {
+        System.out.println("Không tìm thấy");
+    }
 }
+
 
 @Override
 public void searchByName() {
